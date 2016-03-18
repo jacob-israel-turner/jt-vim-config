@@ -8,3 +8,5 @@
 cd ~
 echo .vimrc > "source ~/.vim/.vimrc"
 ```
+
+Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
