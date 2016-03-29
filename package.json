@@ -4,9 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "bash install-packages.sh",
+    "postinstall": "node install.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodegit": "^0.12.0"
+  },
+  "vim-dependencies": [
+    "https://github.com/scrooloose/nerdtree",
+    "https://github.com/altercation/vim-colors-solarized",
+    "https://github.com/lambdatoast/elm.vim",
+    "https://github.com/pangloss/vim-javascript",
+    "https://github.com/mxw/vim-jsx",
+    "https://github.com/othree/yajs.vim"
+  ]
 }
