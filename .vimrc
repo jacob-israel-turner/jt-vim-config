@@ -74,3 +74,13 @@ syntax enable
 
 " Fixes wonky pasting
 " set paste
+
+" Copy to 'clipboard registry' by default
+set clipboard=unnamedplus
+
+" 'Select all' napping
+nmap <C-a> ggVG
+
+" color stuff
+let g:alduin_Shout_Become_Ethereal = 1
+colorscheme alduin
