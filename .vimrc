@@ -84,3 +84,6 @@ nmap <C-a> ggVG
 " color stuff
 let g:alduin_Shout_Become_Ethereal = 1
 colorscheme alduin
+
+" On save, remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
