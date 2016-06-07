@@ -2,6 +2,7 @@
 
 " This must be first, because it changes other options as side effect
 set nocompatible
+set nocp
 
 " Runs pathogen, which is a package manager
 execute pathogen#infect()
@@ -23,9 +24,9 @@ set hidden
 " set tabstop=2     " a tab is four spaces
 filetype plugin indent on
 set tabstop=2
-" set softtabstop=0 
-set shiftwidth=2 
-set expandtab 
+" set softtabstop=0
+set shiftwidth=2
+set expandtab
 
 
 
@@ -50,7 +51,7 @@ set undolevels=1000      " use many muchos levels of undo
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
-nnoremap ; : 
+nnoremap ; :
                  " remaps from : to ;
 " Easy window navigation (play later)
 " map <C-h> <C-w>h

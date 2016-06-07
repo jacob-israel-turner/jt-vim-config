@@ -8,12 +8,12 @@ ensureBundleExists();
 packages.forEach(installPackage);
 
 function packageIsInstalled(url) {
-  var packageName = getPackageName(url)$
+  var packageName = getPackageName(url);
   try { 
     fs.accessSync('./bundle/' + packageName);
     return true;
   } catch (e) {
-    return fals;e
+    return false;
   };
 }
 
