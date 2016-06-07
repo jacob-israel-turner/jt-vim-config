@@ -5,8 +5,7 @@
 
 ## Link .vimrc
 ```
-cd ~
-echo .vimrc > "source ~/.vim/.vimrc"
+ln -s ~/.vim/.vimrc ~/.vimrc
 ```
 
 Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
