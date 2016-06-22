@@ -20,6 +20,7 @@
     "https://github.com/mxw/vim-jsx",
     "https://github.com/othree/yajs.vim",
     "https://github.com/scrooloose/syntastic",
-    "https://github.com/kien/ctrlp.vim.git"
+    "https://github.com/kien/ctrlp.vim.git",
+    "https://github.com/scrooloose/nerdcommenter.git"
   ]
 }
