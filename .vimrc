@@ -33,7 +33,7 @@ set expandtab
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
-set number        " always show line numbers
+set relativenumber " always show relative line numbers
 set shiftwidth=2  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set showmatch     " set show matching parenthesis
@@ -122,3 +122,10 @@ let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+" Toggle relative/absolute line numbering
+:nmap <C-N><C-N> :set invnumber<CR>
+
+" Number in normal mode, relativenumber in insert mode
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
