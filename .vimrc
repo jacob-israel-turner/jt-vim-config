@@ -101,6 +101,7 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint'
+let g:syntastic_typescript_tsc_fname = ''
 let g:syntastic_html_checkers=['']
 
 " ctrl-p
@@ -125,7 +126,3 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Toggle relative/absolute line numbering
 :nmap <C-N><C-N> :set invnumber<CR>
-
-" Number in normal mode, relativenumber in insert mode
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber

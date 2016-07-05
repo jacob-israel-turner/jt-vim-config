@@ -21,6 +21,7 @@
     "https://github.com/othree/yajs.vim",
     "https://github.com/scrooloose/syntastic",
     "https://github.com/kien/ctrlp.vim.git",
-    "https://github.com/scrooloose/nerdcommenter.git"
+    "https://github.com/scrooloose/nerdcommenter.git",
+    "https://github.com/leafgarland/typescript-vim"
   ]
 }
