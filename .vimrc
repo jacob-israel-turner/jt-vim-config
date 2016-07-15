@@ -126,3 +126,8 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Toggle relative/absolute line numbering
 :nmap <C-N><C-N> :set invnumber<CR>
+
+" Folding shortcuts
+" src: http://vim.wikia.com/wiki/Folding
+:nmap ff va}zf " ff to fold by {
+:nmap rr zd " rr to unfold
