@@ -33,7 +33,7 @@ set expandtab
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
-set relativenumber " always show relative line numbers
+set number " always show relative line numbers
 set shiftwidth=2  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set showmatch     " set show matching parenthesis
@@ -82,9 +82,26 @@ set clipboard=unnamedplus
 " 'Select all' napping
 nmap <C-a> ggVG
 
-" color stuff
+" theme stuff stuff
+
+" alduin theme settings
 let g:alduin_Shout_Become_Ethereal = 1
-colorscheme alduin
+
+" sierra theme settings
+
+" backgrounds (lighter to darker)
+" let g:sierra_Sunset = 1
+" let g:sierra_Twilight = 1
+let g:sierra_Midnight = 1
+" let g:sierra_Pitch = 1
+
+" let g:sierra_Campfire = 1
+let g:sierra_Nevada = 1
+" let g:sierra_Clear_Skies = 1
+
+" default theme set:
+colorscheme sierra
+
 
 " On save, remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
@@ -125,7 +142,7 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " Toggle relative/absolute line numbering
-:nmap <C-N><C-N> :set invnumber<CR>
+" :nmap <C-N><C-N> :set invnumber<CR>
 
 " Folding shortcuts
 " src: http://vim.wikia.com/wiki/Folding
