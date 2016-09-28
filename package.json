@@ -18,13 +18,12 @@
     "https://github.com/lambdatoast/elm.vim",
     "https://github.com/pangloss/vim-javascript",
     "https://github.com/mxw/vim-jsx",
-    "https://github.com/othree/yajs.vim",
     "https://github.com/scrooloose/syntastic",
     "https://github.com/ctrlpvim/ctrlp.vim.git",
     "https://github.com/scrooloose/nerdcommenter.git",
-    "https://github.com/leafgarland/typescript-vim",
     "https://github.com/AlessandroYorba/Sierra",
     "https://github.com/AlessandroYorba/Alduin",
-    "git://github.com/wakatime/vim-wakatime.git"
+    "git://github.com/wakatime/vim-wakatime.git",
+    "https://github.com/trevordmiller/nova-vim"
   ]
 }

@@ -100,11 +100,11 @@ let g:sierra_Nevada = 1
 " let g:sierra_Clear_Skies = 1
 
 " default theme set:
-colorscheme sierra
+colorscheme nova
 
 
 " On save, remove trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 
 " syntastic recommended settings (see https://github.com/scrooloose/syntastic#3-recommended-settings)
 set statusline+=%#warningmsg#
