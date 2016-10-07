@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Jacob Turner
+email = jacob.turner@domo.com
+[push]
+	default = simple
+[alias]
+	rb = "!git rebase -i $(git merge-base HEAD origin/master)"
+    # Force Push To Branch - uses current local branch name
+  fptb = "!git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)"
+    # Push To Branch - uses current local branch name
+  ptb = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+    # Sync from Master
+  sync = "pull origin master --rebase"
+    # Check Out Branch
+  cob = "!sh -c 'git checkout $BRANCH_PRE$1' -"
+    # New Branch
+  fork = "!sh -c 'git checkout -b $BRANCH_PRE$1' -"
+    # Delete branch locally and from origin
+    # Doesn't remove local branch if it's unmerged
+  prn = "!sh -c 'echo deleting $1 && git branch -d $BRANCH_PRE$1 && git push origin :$BRANCH_PRE$1' -"
+    # Delete branch locally and from origin
+    # DOES remove local branch if it's unmerged
+  prn-hard = "!sh -c 'echo deleting $1 && git branch -D $BRANCH_PRE$1 && git push origin :$BRANCH_PRE$1' -"
