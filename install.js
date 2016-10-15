@@ -5,7 +5,34 @@ var packages = fs.readFileSync('./package.json').toString();
 packages = JSON.parse(packages)['vim-dependencies'];
 
 ensureBundleExists();
-packages.forEach(installPackage);
+var packageResults = packages.map(installPackage);
+
+packageResults = packageResults.reduce((final, res, index) => {
+  if (res) {
+    final.installing.push({promise: res, url: packages[index]});
+  } else {
+    final.finished.push({url: packages[index]});
+  }
+  return final;
+}, {installing: [], finished: []});
+
+if (packageResults.finished.length) {
+  console.log('The following packages are already installed:');
+  packageResults.finished.forEach(obj => console.log(getPackageName(obj.url)));
+}
+
+if (packageResults.installing.length) {
+  console.log('\nInstalling the following packages:');
+  packageResults.installing.forEach(obj => console.log(getPackageName(obj.url)));
+
+  var allPromises = packageResults.installing.map(obj => obj.promise);
+
+  Promise.all(allPromises)
+    .then(() => console.log('All packages installed'));
+} else {
+  console.log('All packages installed')
+}
+
 
 function packageIsInstalled(url) {
   var packageName = getPackageName(url);
@@ -23,8 +50,10 @@ function getPackageName(url) {
 }
 
 function installPackage(url) {
-  if (packageIsInstalled(url)) return;
-  Git.Clone(url, './bundle/' + getPackageName(url));
+  if (packageIsInstalled(url)) {
+    return false;
+  }
+  return Git.Clone(url, './bundle/' + getPackageName(url))
 }
 
 function ensureBundleExists() {
