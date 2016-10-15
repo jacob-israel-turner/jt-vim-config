@@ -117,11 +117,14 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = 'eslint'
+let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
 let g:syntastic_typescript_tsc_fname = ''
 let g:syntastic_html_checkers=['']
 
 " ctrl-p
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+" Above ^^ should ignore all files matched in the .gitignore file.  Doesnt
+" seem to work now.
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
