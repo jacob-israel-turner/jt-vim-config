@@ -26,6 +26,7 @@
     "git://github.com/wakatime/vim-wakatime.git",
     "https://github.com/trevordmiller/nova-vim",
     "https://github.com/cakebaker/scss-syntax.vim",
-    "https://github.com/hail2u/vim-css3-syntax"
+    "https://github.com/hail2u/vim-css3-syntax",
+    "https://github.com/vim-airline/vim-airline"
   ]
 }
