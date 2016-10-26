@@ -28,6 +28,7 @@
     "https://github.com/cakebaker/scss-syntax.vim",
     "https://github.com/hail2u/vim-css3-syntax",
     "https://github.com/vim-airline/vim-airline",
-    "https://github.com/airblade/vim-gitgutter"
+    "https://github.com/airblade/vim-gitgutter",
+    "git://github.com/tpope/vim-fugitive.git"
   ]
 }
