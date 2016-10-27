@@ -29,6 +29,7 @@
     "https://github.com/hail2u/vim-css3-syntax",
     "https://github.com/vim-airline/vim-airline",
     "https://github.com/airblade/vim-gitgutter",
-    "git://github.com/tpope/vim-fugitive.git"
+    "git://github.com/tpope/vim-fugitive.git",
+    "https://github.com/vim-airline/vim-airline-themes"
   ]
 }
