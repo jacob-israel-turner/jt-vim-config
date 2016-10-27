@@ -144,6 +144,10 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+" vim-airline
+" Smarter tab line (display all buffers when only one tab is open)
+let g:airline#extensions#tabline#enabled = 1
+
 " Toggle relative/absolute line numbering
 " :nmap <C-N><C-N> :set invnumber<CR>
 
