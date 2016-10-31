@@ -19,7 +19,7 @@ email = jacob.turner@domo.com
   fork = "!sh -c 'git checkout -b $BRANCH_PRE$1' -"
     # Delete branch locally and from origin
     # Doesn't remove local branch if it's unmerged
-  prn = "!sh -c 'echo deleting $1 && git branch -d $BRANCH_PRE$1 && git push origin :$BRANCH_PRE$1' -"
+  rmb = "!sh -c 'echo deleting $1 && git branch -d $BRANCH_PRE$1 && git push origin :$BRANCH_PRE$1' -"
     # Delete branch locally and from origin
     # DOES remove local branch if it's unmerged
-  prn-hard = "!sh -c 'echo deleting $1 && git branch -D $BRANCH_PRE$1 && git push origin :$BRANCH_PRE$1' -"
+  rmb-hard = "!sh -c 'echo deleting $1 && git branch -D $BRANCH_PRE$1 && git push origin :$BRANCH_PRE$1' -"
