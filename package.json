@@ -30,6 +30,7 @@
     "https://github.com/vim-airline/vim-airline",
     "https://github.com/airblade/vim-gitgutter",
     "git://github.com/tpope/vim-fugitive.git",
-    "https://github.com/vim-airline/vim-airline-themes"
+    "https://github.com/vim-airline/vim-airline-themes",
+    "https://github.com/klen/python-mode.git"
   ]
 }
