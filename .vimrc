@@ -118,6 +118,9 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
+" ^^ This means that the editor must be started in the same directory that
+" node_modules is located in.
+" Cheaper than a recursive search.
 let g:syntastic_typescript_tsc_fname = ''
 let g:syntastic_html_checkers=['']
 
