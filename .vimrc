@@ -155,3 +155,4 @@ let g:airline#extensions#tabline#enabled = 0
 " src: http://vim.wikia.com/wiki/Folding
 :nmap ff va}zf " ff to fold by {
 :nmap rr zd " rr to unfold
+:nmap tt F(lvh%h " tt to select all text between ( and )
