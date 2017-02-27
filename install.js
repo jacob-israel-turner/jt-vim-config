@@ -1,4 +1,4 @@
-var Git = require('nodegit');
+var { Clone, Reset } = require('nodegit');
 var fs = require('fs');
 
 var packages = fs.readFileSync('./package.json').toString();
@@ -50,10 +50,25 @@ function getPackageName(url) {
 }
 
 function installPackage(url) {
+  let commit;
+  if (url.includes('#')) ({url, commit} = parseUrl(url))
   if (packageIsInstalled(url)) {
     return false;
   }
-  return Git.Clone(url, './bundle/' + getPackageName(url))
+  return Clone(url, './bundle/' + getPackageName(url))
+    .then(repo => {
+      if (!commit) return repo
+      console.log(`On ${getPackageName(url)}, checking out commit: ${commit}`)
+      return repo.getCommit(commit)
+        .then(gitCommit => {
+          return Reset.reset(repo, gitCommit, Reset.TYPE.HARD)
+        })
+    })
+}
+
+function parseUrl(url) {
+  [url, commit] = url.split('#')
+  return {url, commit}
 }
 
 function ensureBundleExists() {
