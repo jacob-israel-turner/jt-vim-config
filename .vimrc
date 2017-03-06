@@ -18,6 +18,12 @@ let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Folding shortcuts
+" src: http://vim.wikia.com/wiki/Folding
+:nmap ff va}zf " ff to fold by {
+:nmap rr zd " rr to unfold
+:nmap tt F(lvh%h "tt to select all text between ( and )
+
 " This hides buffers instead of closing them
 set hidden
 
@@ -154,8 +160,6 @@ let g:airline#extensions#tabline#enabled = 0
 " Toggle relative/absolute line numbering
 " :nmap <C-N><C-N> :set invnumber<CR>
 
-" Folding shortcuts
-" src: http://vim.wikia.com/wiki/Folding
-:nmap ff va}zf " ff to fold by {
-:nmap rr zd " rr to unfold
-:nmap tt F(lvh%h " tt to select all text between ( and )
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
