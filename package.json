@@ -42,6 +42,7 @@
     "https://github.com/klen/python-mode.git",
     "https://github.com/Shougo/deoplete.nvim",
     "https://github.com/HerringtonDarkholme/yats.vim",
-    "https://github.com/mhartington/nvim-typescript#afcab45d232baaa915f7ece214127b5bbbdf0b2e"
+    "https://github.com/mhartington/nvim-typescript#afcab45d232baaa915f7ece214127b5bbbdf0b2e",
+    "https://github.com/elixir-lang/vim-elixir"
   ]
 }
