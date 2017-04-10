@@ -160,6 +160,6 @@ let g:airline#extensions#tabline#enabled = 0
 " Toggle relative/absolute line numbering
 " :nmap <C-N><C-N> :set invnumber<CR>
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-
+" tsuquyomi (TypeScript server support)
+" enable completion detail
+" let g:tsuquyomi_completion_detail = 1
