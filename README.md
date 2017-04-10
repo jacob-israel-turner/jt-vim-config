@@ -12,3 +12,4 @@ Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vi
 
 ## Todo:
  - [ ] Make autocomplete work with [tsuquyomi](https://github.com/Quramy/tsuquyomi).
+ - [ ] Add custom [git file status indicators](https://github.com/Xuyuanp/nerdtree-git-plugin#faq)
