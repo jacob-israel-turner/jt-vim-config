@@ -1,7 +1,7 @@
-### Jacob Turner's Vim configuration
+# Jacob Turner's Vim configuration
 
 ## Install packages
-`npm install`
+`npm install` or `npm start` (if you've already installed the node dependencies)
 
 ## Link .vimrc
 ```
@@ -9,3 +9,6 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 ```
 
 Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
+
+## Todo:
+ - [ ] Make autocomplete work with [tsuquyomi](https://github.com/Quramy/tsuquyomi).
