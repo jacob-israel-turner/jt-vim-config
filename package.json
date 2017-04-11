@@ -44,6 +44,7 @@
     "https://github.com/elixir-lang/vim-elixir",
     "https://github.com/Shougo/vimproc.vim",
     "https://github.com/Quramy/tsuquyomi",
-    "https://github.com/Xuyuanp/nerdtree-git-plugin"
+    "https://github.com/Xuyuanp/nerdtree-git-plugin",
+    "https://github.com/romainl/Apprentice"
   ]
 }
