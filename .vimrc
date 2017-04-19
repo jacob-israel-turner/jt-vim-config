@@ -32,6 +32,7 @@ set hidden
 
 " set tabstop=2     " a tab is four spaces
 filetype plugin indent on
+set termguicolors
 set tabstop=2
 " set softtabstop=0
 set shiftwidth=2
