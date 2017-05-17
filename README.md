@@ -8,6 +8,14 @@
 ln -s ~/.vim/.vimrc ~/.vimrc
 ```
 
+## Create `init.vim`
+Create `~/.config/nvim/init.vim` and place the following inside:
+```
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vimrc
+```
+
 Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
 
 ## Todo:

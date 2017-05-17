@@ -57,6 +57,7 @@ set title         " change the terminal's title
 set visualbell    " don't beep
 set noerrorbells  " don't beep
 set cursorline    " Highlight line the cursor is on
+set mouse=a       " Allow clicking in all modes
 " Easy window navigation (play later)
 " map <C-h> <C-w>h
 " map <C-j> <C-w>j
