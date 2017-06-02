@@ -6,7 +6,8 @@ email = jacob.turner@domo.com
 [push]
 	default = simple
 [alias]
-	rb = "!sh -c 'git rebase -i $(git merge-base HEAD origin/$1)' -"
+    # Rebase against $1 branch
+  rb = "!sh -c 'git rebase -i $(git merge-base HEAD origin/$1)' -"
     # Force Push To Branch - uses current local branch name
   fptb = "!git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)"
     # Push To Branch - uses current local branch name
