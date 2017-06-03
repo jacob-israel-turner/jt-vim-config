@@ -46,6 +46,7 @@
     "https://github.com/Quramy/tsuquyomi",
     "https://github.com/Xuyuanp/nerdtree-git-plugin",
     "https://github.com/romainl/Apprentice",
-    "https://github.com/posva/vim-vue"
+    "https://github.com/posva/vim-vue",
+    "https://github.com/OmniSharp/omnisharp-vim.git"
   ]
 }
