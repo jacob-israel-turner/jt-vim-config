@@ -58,6 +58,7 @@ set visualbell    " don't beep
 set noerrorbells  " don't beep
 set cursorline    " Highlight line the cursor is on
 set mouse=a       " Allow clicking in all modes
+set selection=exclusive " When using $ to select a line (v$), do NOT select the newline character.
 " Easy window navigation (play later)
 " map <C-h> <C-w>h
 " map <C-j> <C-w>j
