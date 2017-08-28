@@ -26,7 +26,6 @@
     "https://github.com/lambdatoast/elm.vim",
     "https://github.com/pangloss/vim-javascript",
     "https://github.com/mxw/vim-jsx",
-    "https://github.com/scrooloose/syntastic",
     "https://github.com/ctrlpvim/ctrlp.vim",
     "https://github.com/scrooloose/nerdcommenter",
     "https://github.com/AlessandroYorba/Sierra",
@@ -47,6 +46,7 @@
     "https://github.com/Xuyuanp/nerdtree-git-plugin",
     "https://github.com/romainl/Apprentice",
     "https://github.com/posva/vim-vue",
-    "https://github.com/OmniSharp/omnisharp-vim.git"
+    "https://github.com/OmniSharp/omnisharp-vim.git",
+    "https://github.com/w0rp/ale.git"
   ]
 }

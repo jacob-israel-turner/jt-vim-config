@@ -112,23 +112,10 @@ colorscheme nova
 " On save, remove trailing whitespace
 " autocmd BufWritePre * :%s/\s\+$//e
 
-" syntastic recommended settings (see https://github.com/scrooloose/syntastic#3-recommended-settings)
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" Ale rules
+let g:ale_sign_error = '💩'
+let g:ale_sign_warning = '🤔'
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
-" ^^ This means that the editor must be started in the same directory that
-" node_modules is located in.
-" Cheaper than a recursive search.
-let g:syntastic_typescript_tsc_fname = ''
-let g:syntastic_html_checkers=['']
 
 " ctrl-p
 " let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
