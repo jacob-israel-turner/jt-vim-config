@@ -116,6 +116,8 @@ colorscheme nova
 let g:ale_sign_error = '💩'
 let g:ale_sign_warning = '🤔'
 let g:airline#extensions#ale#enabled = 1
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
 
 nmap <silent> <Left> <Plug>(ale_previous_wrap)
 nmap <silent> <Right> <Plug>(ale_next_wrap)
@@ -165,3 +167,7 @@ let g:airline#extensions#tabline#enabled = 0
 " tsuquyomi (TypeScript server support)
 " enable completion detail
 " let g:tsuquyomi_completion_detail = 1
+
+
+" Commands
+command Jsonify :%!python -m json.tool
