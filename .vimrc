@@ -116,8 +116,12 @@ colorscheme nova
 let g:ale_sign_error = '💩'
 let g:ale_sign_warning = '🤔'
 let g:airline#extensions#ale#enabled = 1
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
+" highlight clear ALEErrorSign
+" highlight clear ALEWarningSign
+" ^^ This is to fix the gutter.  Weird spacing stuff when scrolling.
+" I originally set these settings (specifically these bottom two) to fix it.
+" But the problem returned, and commenting these two out fixed it again
+" Might have to dig more if the problem returns
 
 nmap <silent> <Left> <Plug>(ale_previous_wrap)
 nmap <silent> <Right> <Plug>(ale_next_wrap)
