@@ -47,6 +47,7 @@
     "https://github.com/romainl/Apprentice",
     "https://github.com/posva/vim-vue",
     "https://github.com/OmniSharp/omnisharp-vim.git",
-    "https://github.com/w0rp/ale.git"
+    "https://github.com/w0rp/ale.git",
+    "https://github.com/tomlion/vim-solidity"
   ]
 }
