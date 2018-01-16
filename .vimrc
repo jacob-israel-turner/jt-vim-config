@@ -113,9 +113,9 @@ colorscheme nova
 " autocmd BufWritePre * :%s/\s\+$//e
 
 " Ale config
-let g:ale_sign_error = '💩'
-let g:ale_sign_warning = '🤔'
-let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+" let g:airline#extensions#ale#enabled = 1
 " highlight clear ALEErrorSign
 " highlight clear ALEWarningSign
 " ^^ This is to fix the gutter.  Weird spacing stuff when scrolling.
