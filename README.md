@@ -8,6 +8,11 @@
 ln -s ~/.vim/.vimrc ~/.vimrc
 ```
 
+## Link .tmux.conf
+```
+ln -s ~/.vim/.tmux.conf ~/.tmux.conf
+```
+
 ## Create `init.vim`
 Create `~/.config/nvim/init.vim` and place the following inside:
 ```
