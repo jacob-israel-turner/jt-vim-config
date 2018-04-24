@@ -24,5 +24,5 @@ source ~/.vimrc
 Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
 
 ## Todo:
- - [ ] Make autocomplete work with [tsuquyomi](https://github.com/Quramy/tsuquyomi).
- - [ ] Add custom [git file status indicators](https://github.com/Xuyuanp/nerdtree-git-plugin#faq)
+ - [X] Make autocomplete work with [tsuquyomi](https://github.com/Quramy/tsuquyomi).
+ - [X] Add custom [git file status indicators](https://github.com/Xuyuanp/nerdtree-git-plugin#faq)
