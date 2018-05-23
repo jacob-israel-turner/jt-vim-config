@@ -179,7 +179,10 @@ let g:airline#extensions#tabline#enabled = 0
 
 " tsuquyomi (TypeScript server support)
 " enable completion detail
-" let g:tsuquyomi_completion_detail = 1
+let g:tsuquyomi_completion_detail = 1
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
 
 
 " Commands
