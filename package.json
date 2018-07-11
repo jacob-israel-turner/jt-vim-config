@@ -50,6 +50,6 @@
     "https://github.com/tomlion/vim-solidity",
     "https://github.com/prettier/vim-prettier",
     "https://github.com/leafgarland/typescript-vim",
-    "https://github.com/krisajenkins/vim-projectlocal"
+    "https://github.com/embear/vim-localvimrc"
   ]
 }
