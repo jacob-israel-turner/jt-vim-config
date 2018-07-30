@@ -1,0 +1,11 @@
+set autoindent noexpandtab tabstop=2 shiftwidth=2 " Use tabs instead of spaces, each tab being 2 columns wide
+
+augroup formatonwrite
+  " ^^ See this SO post: https://stackoverflow.com/questions/33643249/vim-autocmd-bufnewfile-executed-multiple-times
+	autocmd!
+	" ^^ Overwrite previous autocmd.
+	autocmd bufwritepost *.ts silent !yarn prettier:staged %
+  " ^^ On save, for every .ts file run 'yarn prettier:staged <filename>'
+	autocmd bufwritepost *.ts edit!
+  " ^^ On save (but after above autocmd), reload the file
+augroup end
