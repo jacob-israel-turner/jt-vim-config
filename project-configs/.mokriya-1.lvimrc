@@ -1,4 +1,5 @@
 set autoindent noexpandtab tabstop=2 shiftwidth=2 " Use tabs instead of spaces, each tab being 2 columns wide
+let g:ctrlp_custom_ignore = './dist'
 
 augroup formatonwrite
   " ^^ See this SO post: https://stackoverflow.com/questions/33643249/vim-autocmd-bufnewfile-executed-multiple-times
