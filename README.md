@@ -13,6 +13,12 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 ln -s ~/.vim/.tmux.conf ~/.tmux.conf
 ```
 
+## Create ~/.gitconfig
+```
+[include]
+    path = ~/.vim/.gitconfig
+```
+
 ## Create `init.vim`
 Create `~/.config/nvim/init.vim` and place the following inside:
 ```
