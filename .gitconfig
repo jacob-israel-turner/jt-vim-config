@@ -24,3 +24,4 @@ email = j.israel.turner@gmail.com
     # Delete branch locally and from origin
     # DOES remove local branch if it's unmerged
   rmb-hard = "!sh -c 'echo deleting $1 && git branch -D $BRANCH_PRE$1 && git push origin :$BRANCH_PRE$1' -"
+  git = "!sh -c 'git $1' -"
