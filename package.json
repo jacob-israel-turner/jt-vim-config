@@ -50,6 +50,7 @@
     "https://github.com/tomlion/vim-solidity",
     "https://github.com/prettier/vim-prettier",
     "https://github.com/leafgarland/typescript-vim",
-    "https://github.com/embear/vim-localvimrc"
+    "https://github.com/embear/vim-localvimrc",
+    "https://github.com/jparise/vim-graphql.git"
   ]
 }
