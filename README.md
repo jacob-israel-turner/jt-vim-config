@@ -27,6 +27,14 @@ let &packpath = &runtimepath
 source ~/.vimrc
 ```
 
+## vim-plug packages
+
+### Install vim-plug
+https://github.com/junegunn/vim-plug#neovim
+
+### Install plugins
+Open vim and run `:PlugInstall`.
+
 Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
 
 ## Todo:

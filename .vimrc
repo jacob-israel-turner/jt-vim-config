@@ -191,3 +191,7 @@ command Jsonify :%!python -m json.tool
 " vim-localvimrc settings
 let g:localvimrc_sandbox = 0
 let g:localvimrc_ask = 0
+
+call plug#begin()
+  Plug 'Cian911/vim-cadence'
+call plug#end()
