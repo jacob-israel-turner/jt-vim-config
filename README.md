@@ -35,7 +35,8 @@ https://github.com/junegunn/vim-plug#neovim
 ### Install plugins
 Open vim and run `:PlugInstall`.
 
-Idea came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
+## Sources
+Idea for this project came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
 
 ## Todo:
  - [X] Make autocomplete work with [tsuquyomi](https://github.com/Quramy/tsuquyomi).
