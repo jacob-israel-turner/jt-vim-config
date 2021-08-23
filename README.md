@@ -35,6 +35,12 @@ https://github.com/junegunn/vim-plug#neovim
 ### Install plugins
 Open vim and run `:PlugInstall`.
 
+## Link hyper config
+```
+ln -s ~/.vim/.hyper.js ~/.hyper.js
+```
+Restart Hyper after doing this - may need to do it several times.
+
 ## Sources
 Idea for this project came from [here](http://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files)
 
