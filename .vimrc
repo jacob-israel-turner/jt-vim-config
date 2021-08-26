@@ -143,8 +143,8 @@ let g:gitgutter_sign_removed_first_line = '-'
 let g:gitgutter_sign_modified_removed = '!'
 
 " Fugitive Config
-nmap <Down> <Plug>GitGutterNextHunk
-nmap <Up> <Plug>GitGutterPrevHunk
+nmap <Down> <Plug>(GitGutterNextHunk)
+nmap <Up> <Plug>(GitGutterPrevHunk)
 
 
 " ctrl-p
