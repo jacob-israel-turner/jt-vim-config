@@ -174,16 +174,27 @@ let g:NERDTrimTrailingWhitespace = 1
 " Smarter tab line (display all buffers when only one tab is open)
 let g:airline#extensions#tabline#enabled = 0
 
-" CoC
+""" CoC
+" Mappings
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-" extensions
+" Error Highlight
+" Source: https://github.com/neoclide/coc.nvim/blob/daab29410d816a23f0f162ea786024d4f33abe31/doc/coc.txt#L2701
+highlight CocErrorFloat ctermfg=9 guifg=#DF8C8C
+highlight CocErrorSign ctermfg=9 guifg=#DF8C8C
+highlight CocErrorHighlight ctermfg=9 guifg=#DF8C8C
+highlight CocErrorVirtualText ctermfg=9 guifg=#DF8C8C
+" Extensions
 let g:coc_global_extensions = ['coc-tsserver']
+""" End CoC configuration
 
 " Toggle relative/absolute line numbering
 " :nmap <C-N><C-N> :set invnumber<CR>
+
+" Sign Column Color
+:highlight clear SignColumn
 
 " Commands
 command Jsonify :%!python -m json.tool
