@@ -174,16 +174,16 @@ let g:NERDTrimTrailingWhitespace = 1
 " Smarter tab line (display all buffers when only one tab is open)
 let g:airline#extensions#tabline#enabled = 0
 
+" CoC
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+" extensions
+let g:coc_global_extensions = ['coc-tsserver']
+
 " Toggle relative/absolute line numbering
 " :nmap <C-N><C-N> :set invnumber<CR>
-
-" tsuquyomi (TypeScript server support)
-" enable completion detail
-let g:tsuquyomi_completion_detail = 1
-let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
-autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
-
 
 " Commands
 command Jsonify :%!python -m json.tool
@@ -194,4 +194,7 @@ let g:localvimrc_ask = 0
 
 call plug#begin()
   Plug 'Cian911/vim-cadence'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

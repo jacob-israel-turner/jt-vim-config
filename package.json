@@ -25,7 +25,6 @@
     "https://github.com/altercation/vim-colors-solarized",
     "https://github.com/lambdatoast/elm.vim",
     "https://github.com/pangloss/vim-javascript",
-    "https://github.com/mxw/vim-jsx",
     "https://github.com/ctrlpvim/ctrlp.vim",
     "https://github.com/scrooloose/nerdcommenter",
     "https://github.com/AlessandroYorba/Sierra",
@@ -38,10 +37,8 @@
     "git://github.com/tpope/vim-fugitive",
     "https://github.com/vim-airline/vim-airline-themes",
     "https://github.com/klen/python-mode",
-    "https://github.com/HerringtonDarkholme/yats.vim",
     "https://github.com/elixir-lang/vim-elixir",
     "https://github.com/Shougo/vimproc.vim",
-    "https://github.com/Quramy/tsuquyomi",
     "https://github.com/Xuyuanp/nerdtree-git-plugin",
     "https://github.com/romainl/Apprentice",
     "https://github.com/posva/vim-vue",
@@ -49,7 +46,6 @@
     "https://github.com/w0rp/ale.git",
     "https://github.com/tomlion/vim-solidity",
     "https://github.com/prettier/vim-prettier",
-    "https://github.com/leafgarland/typescript-vim",
     "https://github.com/embear/vim-localvimrc",
     "https://github.com/jparise/vim-graphql.git"
   ]
