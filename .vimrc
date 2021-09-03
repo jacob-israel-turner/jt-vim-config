@@ -176,10 +176,10 @@ let g:airline#extensions#tabline#enabled = 0
 
 """ CoC
 " Mappings
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> td <Plug>(coc-definition)
+nmap <silent> ttd <Plug>(coc-type-definition)
+nmap <silent> ti <Plug>(coc-implementation)
+nmap <silent> tr <Plug>(coc-references)
 " Error Highlight
 " Source: https://github.com/neoclide/coc.nvim/blob/daab29410d816a23f0f162ea786024d4f33abe31/doc/coc.txt#L2701
 highlight CocErrorFloat ctermfg=9 guifg=#DF8C8C
