@@ -18,7 +18,11 @@
   "dependencies": {
     "babel-cli": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
-    "nodegit": "^0.25.0"
+    "nodegit": "0.28.0-alpha.18"
+  },
+  "volta": {
+    "yarn": "1.22.19",
+    "node": "16.17.0"
   },
   "vim-dependencies": [
     "https://github.com/scrooloose/nerdtree",
@@ -34,7 +38,7 @@
     "https://github.com/hail2u/vim-css3-syntax",
     "https://github.com/vim-airline/vim-airline",
     "https://github.com/airblade/vim-gitgutter",
-    "git://github.com/tpope/vim-fugitive",
+    "https://github.com/tpope/vim-fugitive",
     "https://github.com/vim-airline/vim-airline-themes",
     "https://github.com/klen/python-mode",
     "https://github.com/elixir-lang/vim-elixir",
