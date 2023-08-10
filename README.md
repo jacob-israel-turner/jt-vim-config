@@ -1,3 +1,7 @@
+🚧🚧🚧 **DEPRECATED** 🚧🚧🚧
+
+I no longer use Vim. Keeping this around in case I decide to switch back eventually.
+
 # Jacob Turner's Vim configuration
 
 ## Install packages
